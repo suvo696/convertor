@@ -1597,7 +1597,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: #495057;
-    background-color: #fff;
+    background-color: #fff !important;
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
@@ -1612,11 +1612,11 @@
         -o-transition: none;
         transition: none; } }
     .form-control::-ms-expand {
-      background-color: transparent;
+      background-color: transparent !important;
       border: 0; }
     .form-control:focus {
       color: #495057;
-      background-color: #fff;
+      background-color: #fff !important;
       border-color: #80bdff;
       outline: 0;
       -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
@@ -1634,7 +1634,7 @@
       color: #6c757d;
       opacity: 1; }
     .form-control:disabled, .form-control[readonly] {
-      background-color: #e9ecef;
+      background-color: #e9ecef !important;
       opacity: 1; }
   
   select.form-control:focus::-ms-value {
@@ -8223,7 +8223,7 @@
     color: rgba(255, 255, 255, 0.9); }
   
   .form-control {
-    background: transparent;
+    background: transparent !important;
     border: none;
     height: 50px;
     color: white !important;
