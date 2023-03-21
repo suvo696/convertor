@@ -11,60 +11,40 @@
 	<link rel="icon" type="image/png" href="https://colorlib.com/etc/cs/comingsoon_01/images/icons/favicon.ico">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" href="./upload/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='./upload/bootstrap.min.css') }}">
 
-	<link rel="stylesheet" type="text/css" href="./upload/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='./upload/font-awesome.min.css') }}">
 
-	<link rel="stylesheet" type="text/css" href="./upload/animate.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='./upload/animate.css') }}">
 
-	<link rel="stylesheet" type="text/css" href="./upload/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='./upload/select2.min.css') }}">
 
-	<link rel="stylesheet" type="text/css" href="./upload/util.css">
-	<link rel="stylesheet" type="text/css" href="./upload/main.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='./upload/util.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='./upload/main.css') }}">
 
 	<meta name="robots" content="noindex, follow">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script>
 		$(function () {
-			$("#multipleUpload").load("multipleUpload.html");
+			$("#multipleUpload").load("/multipleUpload");
 		});
 	</script>
-	<script type="text/javascript" async="" src="./upload/analytics.js.download"
+	<script type="text/javascript" async="" src="{{ url_for('static', filename='./upload/analytics.js.download') }}"
 		nonce="33810634-553c-4b99-9a6a-4e6e478405d9"></script>
-	<script defer="" referrerpolicy="origin" src="./upload/s.js.download"></script>
+	<script defer="" referrerpolicy="origin" src="{{ url_for('static', filename='./upload/s.js.download') }}"></script>
 	<script
 		nonce="33810634-553c-4b99-9a6a-4e6e478405d9">(function (w, d) { !function (bv, bw, bx, by) { bv[bx] = bv[bx] || {}; bv[bx].executed = []; bv.zaraz = { deferred: [], listeners: [] }; bv.zaraz.q = []; bv.zaraz._f = function (bz) { return function () { var bA = Array.prototype.slice.call(arguments); bv.zaraz.q.push({ m: bz, a: bA }) } }; for (const bB of ["track", "set", "debug"]) bv.zaraz[bB] = bv.zaraz._f(bB); bv.zaraz.init = () => { var bC = bw.getElementsByTagName(by)[0], bD = bw.createElement(by), bE = bw.getElementsByTagName("title")[0]; bE && (bv[bx].t = bw.getElementsByTagName("title")[0].text); bv[bx].x = Math.random(); bv[bx].w = bv.screen.width; bv[bx].h = bv.screen.height; bv[bx].j = bv.innerHeight; bv[bx].e = bv.innerWidth; bv[bx].l = bv.location.href; bv[bx].r = bw.referrer; bv[bx].k = bv.screen.colorDepth; bv[bx].n = bw.characterSet; bv[bx].o = (new Date).getTimezoneOffset(); if (bv.dataLayer) for (const bI of Object.entries(Object.entries(dataLayer).reduce(((bJ, bK) => ({ ...bJ[1], ...bK[1] }))))) zaraz.set(bI[0], bI[1], { scope: "page" }); bv[bx].q = []; for (; bv.zaraz.q.length;) { const bL = bv.zaraz.q.shift(); bv[bx].q.push(bL) } bD.defer = !0; for (const bM of [localStorage, sessionStorage]) Object.keys(bM || {}).filter((bO => bO.startsWith("_zaraz_"))).forEach((bN => { try { bv[bx]["z_" + bN.slice(7)] = JSON.parse(bM.getItem(bN)) } catch { bv[bx]["z_" + bN.slice(7)] = bM.getItem(bN) } })); bD.referrerPolicy = "origin"; bD.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(bv[bx]))); bC.parentNode.insertBefore(bD, bC) };["complete", "interactive"].includes(bw.readyState) ? zaraz.init() : bv.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);</script>
+
 </head>
 
-<body>
-	<div class="size1 bg0 where1-parent">
+<body
+	style="background-image: url('/template/img/bg.jpg');background-size: cover;background-repeat: repeat;background-position: center center;">
+	<div class="">
 
-		<div class="flex-c-m bg-img1 size2 where1 overlay1 where2 respon2"
-			style="background-image: url(&#39;images/bg01.jpg&#39;);">
-			<div class="wsize2 flex-w flex-c-m cd100 js-tilt"
-				style="will-change: transform; transform: perspective(300px) rotateX(0deg) rotateY(0deg);">
-				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-					<span class="l2-txt1 p-b-9 days">35</span>
-					<span class="s2-txt4">Days</span>
-				</div>
-				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-					<span class="l2-txt1 p-b-9 hours">17</span>
-					<span class="s2-txt4">Hours</span>
-				</div>
-				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-					<span class="l2-txt1 p-b-9 minutes">32</span>
-					<span class="s2-txt4">Minutes</span>
-				</div>
-				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-					<span class="l2-txt1 p-b-9 seconds">16</span>
-					<span class="s2-txt4">Seconds</span>
-				</div>
-			</div>
-		</div>
 
 		<div class="size3 flex-col-sb flex-w p-l-75 p-r-75 p-t-45 p-b-45 respon1">
 			<div class="wrap-pic1">
-				<a href="index.html" style="
+				<a href="/" style="
     color: #333333;
 ">
 					<h1 class="m-0" style="
@@ -72,39 +52,32 @@
 "><i class="fas fa-server mr-3"></i>EasyMyDoc</h1>
 				</a>
 			</div>
-			<div class="p-t-50 p-b-60">
+			<div>
 				<p class="m1-txt1 p-b-36">
 					Please Drop <span class="m1-txt2">Your file</span>, and wait for an update!
 				</p>
 
 				<div id="multipleUpload"></div>
-				<form class="contact100-form validate-form" style="
-    margin-top: 4%;
-">
-					<div class="w-full">
-						<button class="flex-c-m s2-txt2 size4 bg1 bor1 hov1 trans-04">
-							Submit
-						</button>
-					</div>
-				</form>
-				<p class="s2-txt3 p-t-18">
+				<p class="s2-txt3 p-t-18" style="
+				color: black;
+			">
 					And don’t worry, we hate viruses too!
 				</p>
 			</div>
 		</div>
 	</div>
 
-	<script src="./upload/jquery-3.2.1.min.js.download"></script>
+	<script src="{{ url_for('static', filename='./upload/jquery-3.2.1.min.js.download') }}"></script>
 
-	<script src="./upload/popper.js.download"></script>
-	<script src="./upload/bootstrap.min.js.download"></script>
+	<script src="{{ url_for('static', filename='./upload/popper.js.download') }}"></script>
+	<script src="{{ url_for('static', filename='./upload/bootstrap.min.js.download') }}"></script>
 
-	<script src="./upload/select2.min.js.download"></script>
+	<script src="{{ url_for('static', filename='./upload/select2.min.js.download') }}"></script>
 
-	<script src="./upload/moment.min.js.download"></script>
-	<script src="./upload/moment-timezone.min.js.download"></script>
-	<script src="./upload/moment-timezone-with-data.min.js.download"></script>
-	<script src="./upload/countdowntime.js.download"></script>
+	<script src="{{ url_for('static', filename='./upload/moment.min.js.download') }}"></script>
+	<script src="{{ url_for('static', filename='./upload/moment-timezone.min.js.download') }}"></script>
+	<script src="{{ url_for('static', filename='./upload/moment-timezone-with-data.min.js.download') }}"></script>
+	<script src="{{ url_for('static', filename='./upload/countdowntime.js.download') }}"></script>
 	<script>
 		$('.cd100').countdown100({
 			/*Set Endtime here*/
@@ -121,16 +94,16 @@
 		});
 	</script>
 
-	<script src="./upload/tilt.jquery.min.js.download"></script>
+	<script src="{{ url_for('static', filename='./upload/tilt.jquery.min.js.download') }}"></script>
 	<script>
 		$('.js-tilt').tilt({
 			scale: 1.1
 		})
 	</script>
 
-	<script src="./upload/main.js.download"></script>
+	<script src="{{ url_for('static', filename='./upload/main.js.download') }}"></script>
 
-	<script async="" src="./upload/js"></script>
+	<script async="" src="{{ url_for('static', filename='./upload/js') }}"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
